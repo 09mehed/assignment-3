@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Tailwind and DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                manrope: "Manrope",
+              },
+              backgroundImage: {
+                about: 'url("./assets/Vector.png")',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-manrope">
+    <!-- navbar area start -->
+
+    <nav class="bg-gradient-to-b from-[#F4F4F4] to-[#ffffff]">
+      <div class="navbar container mx-auto lg:px-16">
+                <div class="navbar-start">
+                  <a class="font-bold text-xl"><i class="bg-[#ABEF5F] py-2 px-2 rounded-full -rotate-45 fa-solid fa-arrow-right"></i> Rinterio</a> 
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#494949] font-bold"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div class="flex justify-around items-center">
+                    <button class="flex gap-2 px-3 text-xl">
+                        <i class="bg-[#FFFFFF] py-2 px-3 rounded-full hidden lg:block fa-solid fa-magnifying-glass"></i>
+                        <i class="bg-[#FFFFFF] py-2 px-3 rounded-full hidden lg:block fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button class="hidden lg:block">
+                        <a class="bg-[#ABEF5F] px-4 py-3 rounded-3xl"><span class="font-bold">Book Consult</span> <i class="bg-[#1C1C1C] text-white py-2 px-2 mx-2 rounded-full -rotate-45 fa-solid fa-arrow-right"></i></a>
+                    </button>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="text-xl bg-white px-3 py-2 rounded-full fa-solid fa-bars"></i>
+                       
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li class="text-[#494949] font-bold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                </div>
+      </div>
+
+          <!-- header area start -->
+
+      <section class="py-10 container mx-auto lg:px-16 text-center">
+              <div class="items-center">
+                  <img class="left-5"  src="./assets/banner.png" alt="">
+              </div>
+              <div>
+                  <h1 class="lg:text-6xl text-3xl font-extrabold py-5">A barn house of this design has a striking appearance</h1>
+                  <p class="lg:text-xl text-[14px] font-medium pt-4 pb-5  text-[#494949]">A building in which people live; residence for human beings. Synonyms: abode, domicile. a household<br> often initial capital letter a family, including ancestors and descendants.</p>
+                  <a class="bg-[#CDEFA9] px-4 py-3 rounded-3xl"><span class="font-bold">View Details</span> <i class="bg-[#ABEF5F] text-black py-2 px-2 mx-2 rounded-full -rotate-45 fa-solid fa-arrow-right"></i></a>
+              </div>
+      </section>
+    </nav>
+
+    <!-- about area start -->
+
+    <section class=" bg-[#F4F4F4]">
+      <div class="bg-about bg-no-repeat hover:text-[#0D99FF] hidden lg:block relative">
+        <img class="hover:text-[#0D99FF] absolute top-10 left-8" src="./assets/Vector.png" alt="">
+      </div>
+
+      <div class="py-20 container mx-auto lg:px-16 px-3 lg:flex gap-7">
+        <div class="lg:flex-1">
+           <button class="bg-white text-black rounded-full py-2 px-3 my-3 font-bold"><i class="fa-solid fa-arrow-right"></i> About us</button>
+           <h2 class="font-bold text-4xl text-[#212121] my-2">We design thoughtful <br>liveable spaces</h2>
+           <p class="text-[16px] font-medium text-[#494949] my-5">In the House is an American sitcom starring LL Cool J, Debbie Allen, Maia Campbell, Jeffery Wood, Alfonso Ribeiro and Kim Wayans the marriage is one of convenience.</p>
+            <div class="flex items-center bg-white py-5 px-3 gap-3 my-4 rounded-xl">
+              <div>
+                <img src="./assets/commercial.png" alt="">
+              </div>
+              <div>
+                  <h3 class="text-[#494949] text-xl font-extrabold py-2">Commercial</h3>
+                  <p class="text-[16px] font-medium text-[#737373]">House later marries Dominika in his apartment, with the rest of the team, Wilson, and Cuddy present as witnesses</p>
+              </div>
+            </div>
+
+            <div class="flex items-center bg-white py-5 px-3 gap-3 my-3 rounded-xl">
+              <div>
+                <img src="./assets/residential.png" alt="">
+              </div>
+              <div>
+                  <h3 class="text-[#494949] text-xl font-extrabold py-2">Residential</h3>
+                  <p class="text-[16px] font-medium text-[#737373]">Cuddy breaks down when House recites his vows. Afterward, Dominika confides to House that although.</p>
+              </div>
+            </div>
+        </div>
+        <div class="lg:flex-1">
+          <img class="" src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    
+
+
+</body>
+</html>
